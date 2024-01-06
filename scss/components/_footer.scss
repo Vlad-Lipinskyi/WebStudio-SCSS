@@ -1,0 +1,229 @@
+.footer-box{
+  margin-right: 70px;
+}
+
+.footer-container{
+  display: flex;
+}
+
+.webstudio-wh {
+  color: #ffffff;
+}
+
+.footer {
+  background: #2f303a;
+}
+
+.footer-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+.footer-contacts {
+  font-weight: 400;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-phone{
+  font-weight: 400;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts2 {
+  font-weight: 400;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-icons-box{
+margin-left: 70px;
+}
+
+.footer-title {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-icons{
+width: 20px;
+height: 20px;
+fill: #FFFFFF;
+}
+
+.footer-list-icons {
+  display: flex;
+  padding-top: 32px;
+  gap: 10px;
+}
+
+.footer-icons-link:hover,
+.footer-icons-link:focus {
+  fill: #ffffff;
+  border-radius: 50%;
+  background-color: #2196f3;  
+}
+
+.footer-icons-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-input {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: #ffffff;
+}
+
+.footer-input:hover, .footer-input:focus{
+  border: 1px solid #2196f3;
+  outline: 0;
+}
+.footer-button:focus, .footer-button:hover{
+  outline: 0;
+  background-color: #fff;
+  color: #2196f3;
+}
+.footer-button:focus .form-icon, .footer-button:hover .form-icon{
+  fill: #2196f3;
+}
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
+}
+
+.footer-box2{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.form-icon{
+fill: white;
+width: 24px;
+height: 24px;
+}
+
+.footer-form{
+  padding-left: 93px;
+}
+
+.input-button-container{
+  display: flex;
+  gap: 10px;
+}
+
+.news-content{
+  margin-left: 93px;
+}
+
+.news-label{
+color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.news-input{
+width: 358px;
+height: 50px;
+margin-top: 16px;
+
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+color: rgba(255, 255, 255, 0.60);
+
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: 0.48px;
+}
+
+.news-svg{
+  fill: #f5f4fa;
+}
+
+.news-svg:hover{
+  fill: #2196F3;
+}
+
+
+.news-button{
+  border-radius: 4px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: none;
+  transition-property: background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 17px;
+}
