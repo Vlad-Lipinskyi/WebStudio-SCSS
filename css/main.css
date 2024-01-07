@@ -684,7 +684,7 @@ img {
 .modal-title {
   color: #212121;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -704,7 +704,7 @@ img {
   flex-shrink: 0;
   color: #fff;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -734,7 +734,7 @@ img {
 
 .blue-conditions {
   color: #2196f3;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -745,7 +745,7 @@ img {
 
 .label-conditions {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -756,7 +756,7 @@ img {
 
 .modal-label {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
