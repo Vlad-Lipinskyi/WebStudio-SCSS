@@ -857,7 +857,7 @@ img {
 }
 
 .footer-title {
-  color: #fff;
+  color: #ffffff;
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -870,7 +870,7 @@ img {
 .footer-icons {
   width: 20px;
   height: 20px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-list-icons {
@@ -900,7 +900,7 @@ img {
 }
 
 .footer-label {
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -927,7 +927,7 @@ img {
 
 .footer-button:focus, .footer-button:hover {
   outline: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #2196f3;
 }
 
@@ -958,7 +958,7 @@ img {
 }
 
 .form-icon {
-  fill: white;
+  fill: #ffffff;
   width: 24px;
   height: 24px;
 }
@@ -977,7 +977,7 @@ img {
 }
 
 .news-label {
-  color: #FFF;
+  color: #ffffff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -1005,18 +1005,18 @@ img {
 }
 
 .news-svg {
-  fill: #f5f4fa;
+  fill: #ffffff;
 }
 
 .news-svg:hover {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .news-button {
   border-radius: 4px;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: #ffffff;
   justify-content: center;
   gap: 10px;
   font-size: 16px;

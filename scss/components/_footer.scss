@@ -7,11 +7,11 @@
 }
 
 .webstudio-wh {
-  color: #ffffff;
+  color: $white-color;
 }
 
 .footer {
-  background: #2f303a;
+  background: $dark-gray;
 }
 
 .footer-adress {
@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: $white-color;
   padding-top: 20px;
   padding-bottom: 9px;
 }
@@ -30,7 +30,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $light-gray;
 }
 
 .footer-phone{
@@ -39,7 +39,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $light-gray;
 }
 
 .footer-contacts2 {
@@ -48,7 +48,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $light-gray;
 }
 
 
@@ -62,7 +62,7 @@ margin-left: 70px;
 }
 
 .footer-title {
-  color: #fff;
+  color: $white-color;
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -75,7 +75,7 @@ margin-left: 70px;
 .footer-icons{
 width: 20px;
 height: 20px;
-fill: #FFFFFF;
+fill: $white-color;
 }
 
 .footer-list-icons {
@@ -86,15 +86,15 @@ fill: #FFFFFF;
 
 .footer-icons-link:hover,
 .footer-icons-link:focus {
-  fill: #ffffff;
+  fill: $white-color;
   border-radius: 50%;
-  background-color: #2196f3;  
+  background-color: $blue-color;  
 }
 
 .footer-icons-link {
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: $footer-icons;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@ fill: #FFFFFF;
 }
 
 .footer-label {
-  color: #fff;
+  color: $white-color;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -115,29 +115,29 @@ fill: #FFFFFF;
 }
 .footer-input {
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid $footer-input-border;
+  background-color: $footer-input-bg;
+  box-shadow: 0px 4px 4px 0px $footer-shadow;
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .footer-input:hover, .footer-input:focus{
-  border: 1px solid #2196f3;
+  border: 1px solid $blue-color;
   outline: 0;
 }
 .footer-button:focus, .footer-button:hover{
   outline: 0;
-  background-color: #fff;
-  color: #2196f3;
+  background-color: $white-color;
+  color: $blue-color;
 }
 .footer-button:focus .form-icon, .footer-button:hover .form-icon{
-  fill: #2196f3;
+  fill: $blue-color;
 }
 .footer-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: $light-gray;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
@@ -150,7 +150,7 @@ fill: #FFFFFF;
   gap: 12px;
 }
 .form-icon{
-fill: white;
+fill: $white-color;
 width: 24px;
 height: 24px;
 }
@@ -169,7 +169,7 @@ height: 24px;
 }
 
 .news-label{
-color: #FFF;
+color: $white-color;
 font-family: Roboto;
 font-size: 14px;
 font-style: normal;
@@ -187,7 +187,7 @@ margin-top: 16px;
 border-radius: 4px;
 border: 1px solid rgba(255, 255, 255, 0.30);
 background: rgba(33, 150, 243, 0.00);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 4px 4px 0px $footer-shadow;
 color: rgba(255, 255, 255, 0.60);
 
 font-family: Roboto;
@@ -199,19 +199,19 @@ letter-spacing: 0.48px;
 }
 
 .news-svg{
-  fill: #f5f4fa;
+  fill: $white-color;
 }
 
 .news-svg:hover{
-  fill: #2196F3;
+  fill: $blue-color;
 }
 
 
 .news-button{
   border-radius: 4px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  background-color: $blue-color;
+  box-shadow: 0px 4px 4px 0px $footer-shadow;
+  color: $white-color;
   justify-content: center;
   gap: 10px;
   font-size: 16px;
