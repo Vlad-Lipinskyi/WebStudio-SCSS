@@ -40,7 +40,7 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: $black-color;
 }
 
 .header-list {
@@ -60,14 +60,14 @@
 .nav-icon-smartphone {
   width: 10px;
   height: 16px;
-  fill: #757575;
+  fill: $gray-color;
   margin-right: 10px;
 }
 
 .nav-icon-envelope {
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: $gray-color;
   margin-right: 10px;
 }
 
@@ -77,7 +77,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: $second-black;
   transition-property: color;
   transition-duration:  250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
@@ -108,7 +108,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: $second-black;
   transition-property: color;
   transition-duration:  250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,7 +135,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: $second-black;
   transition-property: color;
   transition-duration:  250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,7 +177,7 @@ align-items: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: $gray-color;
 }
 
 .contacts-item:hover .nav-icons-envelope, .contacts-item:focus .nav-icons-envelope  {
@@ -189,5 +189,5 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color: $gray-color;
 }
