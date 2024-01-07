@@ -381,7 +381,7 @@ img {
 }
 
 .company-text {
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -395,7 +395,7 @@ img {
   position: absolute;
   width: 370px;
   height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: #2f303a;
   left: 0;
   bottom: 0;
   opacity: 80%;

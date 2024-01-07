@@ -15,7 +15,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $gray-color;
   margin-top: 10px;
 }
 
@@ -24,7 +24,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $second-black;
 }
 
 .advantage-item:nth-child(1):before {
@@ -48,7 +48,7 @@ background-image: url(../../img/main/adventage-4.png);
   display: block;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: $advantage-team-bg;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
