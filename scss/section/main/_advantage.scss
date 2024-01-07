@@ -1,55 +1,55 @@
-.advantage-list {
+.advantage__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding-top: 94px;
-}
 
-.advantage-item {
-  width: 270px;
-}
+  .advantage__item {
+    width: 270px;
 
-.advantage-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $gray-color;
-  margin-top: 10px;
-}
+    &:nth-child(1):before {
+      background-image: url(../../img/main/adventage-1.png);
+    }
 
-.advantage-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: $second-black;
-}
+    &:nth-child(2):before {
+      background-image: url(../../img/main/adventage-2.png);
+    }
 
-.advantage-item:nth-child(1):before {
-background-image: url(../../img/main/adventage-1.png);
-}
+    &:nth-child(3):before {
+      background-image: url(../../img/main/adventage-3.png);
+    }
 
-.advantage-item:nth-child(2)::before {
-background-image: url(../../img/main/adventage-2.png);
-}
+    &:nth-child(4):before {
+      background-image: url(../../img/main/adventage-4.png);
+    }
 
-.advantage-item:nth-child(3)::before {
-background-image: url(../../img/main/adventage-3.png);
-}
+    &::before {
+      content: "";
+      display: block;
+      width: 270px;
+      height: 120px;
+      background-color: $advantage-team-bg;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 30px;
+    }
 
-.advantage-item:nth-child(4)::before {
-background-image: url(../../img/main/adventage-4.png);
-}
+    .advantage__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: $second-black;
+    }
 
-.advantage-item::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-color: $advantage-team-bg;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
+    .advantage__description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $gray-color;
+      margin-top: 10px;
+    }
+  }
 }
