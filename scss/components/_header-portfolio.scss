@@ -1,4 +1,4 @@
-.header{
+.header {
   outline: solid $white-color 1px;
 }
 
@@ -21,38 +21,40 @@
   justify-content: space-between;
   margin-right: auto;
   position: relative;
-} 
+}
 
-.header-section{
+.header-section {
+  padding-top: 24px;
+  padding-bottom: 25px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-} 
+}
 
-.header-navigation{
+.header-navigation {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
 
-.header-page:not(:last-child){
+.header-page:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-icon-smartphone{
-width: 10px;
-height: 16px;
-fill: $gray-color;
-margin-right: 10px;
+.nav-icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: $gray-color;
+  margin-right: 10px;
 }
 
-.nav-icon-envelope{
-width: 16px;
-height: 12px;
-fill: $gray-color;
-margin-right: 10px;
+.nav-icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: $gray-color;
+  margin-right: 10px;
 }
-
 
 .nav-studio:hover + .navigation-box {
   transform: translatey(0);
@@ -89,7 +91,7 @@ margin-right: 10px;
   position: relative;
 }
 
-.nav-portfolio:after{
+.nav-portfolio:after {
   content: "";
   display: block;
   position: absolute;
@@ -164,17 +166,16 @@ margin-right: 10px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $blue-color;
-  margin-right: 93px
+  margin-right: 93px;
 }
 
 .nav-webstudiobl {
   color: black;
 }
 
-.contacts-list{
+.contacts-list {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   margin-left: auto;
-}  
-
+}

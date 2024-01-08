@@ -3,15 +3,15 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  .footer__container {
+  &__container {
     display: flex;
   }
 
-  .footer__webstudio-wh {
+  &__webstudio-wh {
     color: $white-color;
   }
 
-  .footer__adress {
+  &__adress {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -21,7 +21,7 @@
     padding-bottom: 9px;
   }
 
-  .footer__contacts {
+  &__contacts {
     font-weight: 400;
     display: flex;
     font-size: 14px;
@@ -30,7 +30,7 @@
     color: $light-gray;
   }
 
-  .footer__phone {
+  &__phone {
     font-weight: 400;
     display: flex;
     font-size: 14px;
@@ -43,7 +43,7 @@
 .icons {
   margin-left: 70px;
 
-  .icons__title {
+  &__title {
     color: $white-color;
     font-family: "Roboto";
     font-size: 14px;
@@ -54,13 +54,13 @@
     text-transform: uppercase;
   }
 
-  .icons__list {
+  &__list {
     display: flex;
     padding-top: 32px;
     gap: 10px;
   }
 
-  .icons__link {
+  &__link {
     width: 44px;
     height: 44px;
     background-color: $footer-icons;
@@ -73,14 +73,14 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .icons__link:hover,
-  .icons__link:focus {
+  &__link:hover,
+  &__link:focus {
     fill: $white-color;
     border-radius: 50%;
     background-color: $blue-color;
   }
 
-  .icons__svg {
+  &__svg {
     width: 20px;
     height: 20px;
     fill: $white-color;
@@ -90,7 +90,7 @@
 .news {
   margin-left: 93px;
 
-  .news__label {
+  &__label {
   color: $white-color;
   font-family: Roboto;
   font-size: 14px;
@@ -101,7 +101,7 @@
   text-transform: uppercase;
 }
 
-.news__input {
+&__input {
   width: 342px;
   height: 50px;
   margin-top: 16px;
@@ -121,20 +121,20 @@
   padding-left: 16px;
 }
 
-.news__input-button-container {
+&__input-button-container {
   display: flex;
   gap: 10px;
 }
 
-.news__svg {
+&__svg {
   fill: $white-color;
 }
 
-.news__svg:hover {
+&__svg:hover {
   fill: $blue-color;
 }
 
-.news__button {
+&__button {
   border-radius: 4px;
   background-color: $blue-color;
   box-shadow: 0px 4px 4px 0px $shadow;
@@ -154,6 +154,5 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 17px;
 }
-
 }
 
