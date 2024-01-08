@@ -65,8 +65,8 @@ transform: translatey(0);
         flex-direction: column;
         justify-content: center;
 
-        @extend %transition;
-        transition-property: box-shadow;
+        // @extend %transition;
+        // transition-property: box-shadow;
     }
 
     .poster-page:hover, .poster-link:focus .poster-page{
