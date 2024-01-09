@@ -12,7 +12,7 @@
   }
 
   &__adress {
-    @extend %footer-text;
+    @extend %footer-text !optional;
     display: flex;
     color: $white-color;
     padding-top: 20px;
@@ -20,13 +20,13 @@
   }
 
   &__contacts {
-    @extend %footer-text;
+    @extend %footer-text !optional;
     display: flex;
     color: $light-gray;
   }
 
   &__phone {
-    @extend %footer-text;
+    @extend %footer-text !optional;
     display: flex;
     color: $light-gray;
   }
@@ -36,9 +36,9 @@
   margin-left: 70px;
 
   &__title {
-   @extend %footer-font;
-
-  &__list {
+   @extend %footer-font !optional;
+}
+&__list {
     display: flex;
     padding-top: 32px;
     gap: 10px;
@@ -68,15 +68,14 @@
     width: 20px;
     height: 20px;
     fill: $white-color;
-  }
-}
+  } 
 }
 
 .news {
   margin-left: 93px;
 
   &__label {
-  @extend %footer-font;
+  @extend %footer-font !optional;
 }
 
 &__input {

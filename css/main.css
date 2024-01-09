@@ -714,12 +714,12 @@ img {
 .icons {
   margin-left: 70px;
 }
-.icons__title__list {
+.icons__list {
   display: flex;
   padding-top: 32px;
   gap: 10px;
 }
-.icons__title__link {
+.icons__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -731,12 +731,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons__title__link:hover, .icons__title__link:focus {
+.icons__link:hover, .icons__link:focus {
   fill: #ffffff;
   border-radius: 50%;
   background-color: #2196f3;
 }
-.icons__title__svg {
+.icons__svg {
   width: 20px;
   height: 20px;
   fill: #ffffff;

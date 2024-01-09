@@ -366,43 +366,22 @@ img {
   color: #ffffff;
 }
 .footer__adress {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  display: flex;
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 9px;
 }
 .footer__contacts {
-  font-weight: 400;
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__phone {
-  font-weight: 400;
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .icons {
   margin-left: 70px;
-}
-.icons__title {
-  color: #ffffff;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 .icons__list {
   display: flex;
@@ -434,16 +413,6 @@ img {
 
 .news {
   margin-left: 93px;
-}
-.news__label {
-  color: #ffffff;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 .news__input {
   width: 342px;
