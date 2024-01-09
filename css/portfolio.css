@@ -34,8 +34,39 @@ img {
   display: block;
 }
 
+.header__nav-studio {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons__link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__contacts, .footer__adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.news__label, .icons__title {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
 .header {
   outline: solid #ffffff 1px;
+  position: relative;
 }
 .header__logo {
   font-family: "Raleway";
@@ -74,19 +105,23 @@ img {
   width: 10px;
   height: 16px;
   fill: #757575;
-  margin-right: 10px;
+  position: absolute;
+  top: 31px;
+  left: 1206px;
 }
 .header__nav-icon-envelope {
   width: 16px;
   height: 12px;
   fill: #757575;
-  margin-right: 10px;
+  position: absolute;
+  top: 33px;
+  left: 1372px;
 }
-.header__nav-studio:hover + .navigation-box {
+.header__nav-studio:hover + .header__navigation-box {
   transform: translatey(0);
   background-color: #2196f3;
 }
-.header__nav-contacts:hover + .navigation-box {
+.header__nav-contacts:hover + .header__navigation-box {
   transform: translatey(0);
   background-color: #2196f3;
 }
@@ -111,6 +146,9 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__nav-portfolio:after {
   content: "";
@@ -136,6 +174,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__nav-contacts:hover {
   font-weight: 500;
@@ -376,6 +417,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   display: flex;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -396,9 +441,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons__link:hover, .icons__link:focus {
   fill: #ffffff;

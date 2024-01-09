@@ -48,6 +48,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icons__link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header__nav-mail, .header__nav-contacts:hover, .header .header__nav-contacts:focus, .header__nav-contacts, .header__nav-portfolio:hover, .header .header__nav-portfolio:focus, .header__nav-portfolio, .header__nav-studio:hover, .header .nav-studio:focus, .header__nav-studio {
   font-weight: 500;
   font-size: 14px;
@@ -55,7 +61,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.footer__phone, .footer__contacts, .footer__adress {
+.footer__contacts, .footer__adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -76,6 +82,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  position: relative;
 }
 .header__container {
   display: flex;
@@ -154,7 +161,9 @@ img {
   width: 10px;
   height: 16px;
   fill: #757575;
-  margin-right: 10px;
+  position: absolute;
+  top: 31px;
+  left: 1206px;
 }
 .header__nav-mail {
   color: #757575;
@@ -163,7 +172,9 @@ img {
   width: 16px;
   height: 12px;
   fill: #757575;
-  margin-right: 10px;
+  position: absolute;
+  top: 33px;
+  left: 1372px;
 }
 .header__contacts-item:hover .header__nav-icon-smartphone, .header__contacts-item:focus .header__nav-icon-smartphone {
   fill: #2196f3;
@@ -374,8 +385,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
   margin-bottom: 10px;
 }
@@ -707,6 +718,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   display: flex;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -727,9 +742,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons__link:hover, .icons__link:focus {
   fill: #ffffff;

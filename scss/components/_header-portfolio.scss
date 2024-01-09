@@ -1,5 +1,6 @@
 .header {
   outline: solid $white-color 1px;
+  position: relative;
 
   &__logo{
   font-family: "Raleway";
@@ -44,22 +45,26 @@
   width: 10px;
   height: 16px;
   fill: $gray-color;
-  margin-right: 10px;
+  position: absolute;
+  top: 31px;
+  left: 1206px
 }
 
 &__nav-icon-envelope {
   width: 16px;
   height: 12px;
   fill: $gray-color;
-  margin-right: 10px;
+  position: absolute;
+  top: 33px;
+  left: 1372px;
 }
 
-&__nav-studio:hover + .navigation-box {
+&__nav-studio:hover + &__navigation-box {
   transform: translatey(0);
   background-color: $blue-color;
 }
 
-&__nav-contacts:hover + .navigation-box {
+&__nav-contacts:hover + &__navigation-box {
   transform: translatey(0);
   background-color: $blue-color;
 }
@@ -70,7 +75,9 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $black-color;
+  @extend %transition;
 }
+
 &__nav-studio:hover {
   font-weight: 500;
   font-size: 14px;
@@ -86,6 +93,9 @@
   letter-spacing: 0.02em;
   color: $second-black;
   position: relative;
+  transition-property: color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &__nav-portfolio:after {
@@ -114,6 +124,9 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $second-black;
+  transition-property: color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &__nav-contacts:hover {
@@ -176,11 +189,7 @@
   gap: 50px;
   margin-left: auto;
 }
-
 }
-
-
-
 
 .logo {
   font-family: "Raleway";

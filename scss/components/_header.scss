@@ -1,6 +1,7 @@
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  position: relative;
 
   &__container {
   display: flex;
@@ -109,7 +110,9 @@ align-items: center;
   width: 10px;
   height: 16px;
   fill: $gray-color;
-  margin-right: 10px;
+  position: absolute;
+  top: 31px;
+  left: 1206px
 }
 
 &__nav-mail {
@@ -121,7 +124,9 @@ align-items: center;
   width: 16px;
   height: 12px;
   fill: $gray-color;
-  margin-right: 10px;
+  position: absolute;
+  top: 33px;
+  left: 1372px;
 }
 
 &__contacts-item:hover &__nav-icon-smartphone, &__contacts-item:focus &__nav-icon-smartphone{

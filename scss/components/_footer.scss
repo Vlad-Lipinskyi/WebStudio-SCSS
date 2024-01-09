@@ -26,7 +26,10 @@
   }
 
   &__phone {
-    @extend %footer-text !optional;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
     display: flex;
     color: $light-gray;
   }
@@ -52,9 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition-bg !optional;
   }
 
   &__link:hover,
