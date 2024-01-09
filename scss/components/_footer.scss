@@ -12,7 +12,7 @@
   }
 
   &__adress {
-    @include footer-text;
+    @extend %footer-text;
     display: flex;
     color: $white-color;
     padding-top: 20px;
@@ -20,13 +20,13 @@
   }
 
   &__contacts {
-    @include footer-text;
+    @extend %footer-text;
     display: flex;
     color: $light-gray;
   }
 
   &__phone {
-    @include footer-text;
+    @extend %footer-text;
     display: flex;
     color: $light-gray;
   }
@@ -36,15 +36,7 @@
   margin-left: 70px;
 
   &__title {
-    color: $white-color;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-  }
+   @extend %footer-font;
 
   &__list {
     display: flex;
@@ -78,19 +70,13 @@
     fill: $white-color;
   }
 }
+}
 
 .news {
   margin-left: 93px;
 
   &__label {
-  color: $white-color;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
+  @extend %footer-font;
 }
 
 &__input {
@@ -147,4 +133,3 @@
   margin-top: 17px;
 }
 }
-

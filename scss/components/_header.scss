@@ -16,7 +16,7 @@
 }
 
 &__logo {
-  @include header-font;
+  @extend %header-font;
   color: $blue-color;
 }
 
@@ -33,15 +33,15 @@
 }
 
 &__nav-webstudiobl {
-  @include header-font;
+ @extend %header-font;
   color: $black-color;
 }
 
 &__nav-studio {
   position: relative;
-  @include nav-text;
+  @extend %nav-text;
   color: $second-black;
-  @include transition;
+  @extend %transition;
 }
 
 &__nav-studio:after{
@@ -57,14 +57,14 @@
   }
 
 &__nav-studio:hover, .nav-studio:focus {
-  @include nav-text;
+  @extend %nav-text;
   color: $blue-color;
 }
 
 &__nav-portfolio {
- @include nav-text;
+@extend %nav-text;
   color: $second-black;
-  @include transition;
+  @extend %transition;
 }
 
 
@@ -73,18 +73,18 @@
   background-color: $blue-color;
 }
 &__nav-portfolio:hover, .header__nav-portfolio:focus {
-  @include nav-text;
+  @extend %nav-text;
   color: $blue-color;
 }
 
 &__nav-contacts {
-  @include nav-text;
+  @extend %nav-text;
   color: $second-black;
-  @include transition;
+  @extend %transition;
 }
 
 &__nav-contacts:hover, .header__nav-contacts:focus {
-  @include nav-text;
+  @extend %nav-text;
   color: $blue-color;
   
 }
@@ -113,7 +113,7 @@ align-items: center;
 }
 
 &__nav-mail {
-  @include nav-text;
+  @extend %nav-text;
   color: $gray-color;
 }
 
@@ -151,6 +151,6 @@ color: $gray-color;
 }
 
 .logo {
-  @include header-font;
+  @extend %header-font;
   color: $blue-color;
 }
