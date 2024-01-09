@@ -1,42 +1,53 @@
+.poster {
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 94px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 
+  &__page {
+    border: 1px solid $poster-border;
+    background: $white-color;
+    overflow: hidden;
+  }
 
-
-.title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $second-black;
-}
-
-.descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: $gray-color;
-}
-
-.poster-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.poster-page{
-border: 1px solid $poster-border;
-background: $white-color;
-overflow: hidden;
-}
-
-.poster-page:hover
-.poster-page:focus{
+  &__page:hover &__page:focus {
   border: 1px solid $poster-border;
-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.overlay{
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__page:hover,
+  &__link:focus &__page {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    outline: none;
+  }
+
+  &__fade-box {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__fade-box:hover &__overlay {
+    transform: translatey(0);
+  }
+
+  &__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -49,54 +60,37 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0
   transition-timing-function: ease-in-out;
 }
 
-.fade-box{
-overflow: hidden;
-position: relative;
+&__overlay-text {
+  color: $white-color;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  width: 322px;
+  margin: 63px 24px;
 }
 
-.fade-box:hover .overlay{
-transform: translatey(0);
-}
-
-.poster-link{
-        width: 100%;
-        height: 100%;
-        display: flex; 
-        flex-direction: column;
-        justify-content: center;
-
-        // @extend %transition;
-        // transition-property: box-shadow;
-    }
-
-    .poster-page:hover, .poster-link:focus .poster-page{
-        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-        outline: none;
-    }
-
-
-.overlay-text{
-color: $white-color;
-font-family: 'Roboto';
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; 
-letter-spacing: 0.54px;
-width: 322px;
-margin: 63px 24px;
-}
-
-.container-poster{
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 94px;
-}
-
-.work-poster{
-  padding-bottom: 94px;
-}
-
-.poster-text{
+&__text {
   padding: 20px 24px;
 }
+
+  &__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $second-black;
+}
+
+&__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $gray-color;
+}
+}
+
+

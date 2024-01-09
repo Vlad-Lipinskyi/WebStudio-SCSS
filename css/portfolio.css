@@ -200,7 +200,7 @@ img {
   color: #2196f3;
 }
 
-.btn .btn__list {
+.btn__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -208,7 +208,7 @@ img {
   padding-top: 100px;
   padding-bottom: 56px;
 }
-.btn .btn__first {
+.btn__first {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -220,7 +220,7 @@ img {
   width: 73px;
   height: 38px;
 }
-.btn .btn__second {
+.btn__second {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -232,7 +232,7 @@ img {
   width: 125px;
   height: 38px;
 }
-.btn .btn__third {
+.btn__third {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -244,7 +244,7 @@ img {
   width: 112px;
   height: 38px;
 }
-.btn .btn__fourth {
+.btn__fourth {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -256,7 +256,7 @@ img {
   width: 103px;
   height: 38px;
 }
-.btn .btn__fiveth {
+.btn__fiveth {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -268,52 +268,52 @@ img {
   width: 130px;
   height: 38px;
 }
-.btn .btn__first:active,
-.btn .btn__second:active,
-.btn .btn__third:active,
-.btn .btn__fourth:active,
-.btn .btn__fiveth:active {
+.btn__first:active, .btn__second:active, .btn__third:active, .btn__fourth:active, .btn__fiveth:active {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: aliceblue;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
+.poster__container {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 94px;
 }
-
-.descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.poster-list {
+.poster__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-
-.poster-page {
+.poster__page {
   border: 1px solid #EEE;
   background: #ffffff;
   overflow: hidden;
 }
-
-.poster-page:hover .poster-page:focus {
+.poster__page:hover .poster__page:focus {
   border: 1px solid #EEE;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
-.overlay {
+.poster__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.poster__page:hover, .poster__link:focus .poster__page {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+.poster__fade-box {
+  overflow: hidden;
+  position: relative;
+}
+.poster__fade-box:hover .poster__overlay {
+  transform: translatey(0);
+}
+.poster__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -325,30 +325,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
-
-.fade-box {
-  overflow: hidden;
-  position: relative;
-}
-
-.fade-box:hover .overlay {
-  transform: translatey(0);
-}
-
-.poster-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.poster-page:hover, .poster-link:focus .poster-page {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  outline: none;
-}
-
-.overlay-text {
+.poster__overlay-text {
   color: #ffffff;
   font-family: "Roboto";
   font-size: 18px;
@@ -359,19 +336,22 @@ img {
   width: 322px;
   margin: 63px 24px;
 }
-
-.container-poster {
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 94px;
-}
-
-.work-poster {
-  padding-bottom: 94px;
-}
-
-.poster-text {
+.poster__text {
   padding: 20px 24px;
+}
+.poster__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.poster__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .footer {
@@ -457,7 +437,7 @@ img {
 }
 .news__label {
   color: #ffffff;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -474,7 +454,7 @@ img {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

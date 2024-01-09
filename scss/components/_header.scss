@@ -16,11 +16,7 @@
 }
 
 &__logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include header-font;
   color: $blue-color;
 }
 
@@ -37,24 +33,15 @@
 }
 
 &__nav-webstudiobl {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include header-font;
   color: $black-color;
 }
 
 &__nav-studio {
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include nav-text;
   color: $second-black;
-  transition-property: color;
-  transition-duration:  250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  @include transition;
 }
 
 &__nav-studio:after{
@@ -70,22 +57,14 @@
   }
 
 &__nav-studio:hover, .nav-studio:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include nav-text;
   color: $blue-color;
 }
 
 &__nav-portfolio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+ @include nav-text;
   color: $second-black;
-  transition-property: color;
-  transition-duration:  250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 }
 
 
@@ -94,29 +73,18 @@
   background-color: $blue-color;
 }
 &__nav-portfolio:hover, .header__nav-portfolio:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include nav-text;
   color: $blue-color;
 }
 
 &__nav-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include nav-text;
   color: $second-black;
-  transition-property: color;
-  transition-duration:  250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 }
 
 &__nav-contacts:hover, .header__nav-contacts:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include nav-text;
   color: $blue-color;
   
 }
@@ -145,10 +113,7 @@ align-items: center;
 }
 
 &__nav-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include nav-text;
   color: $gray-color;
 }
 
@@ -186,10 +151,6 @@ color: $gray-color;
 }
 
 .logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include header-font;
   color: $blue-color;
 }

@@ -12,30 +12,22 @@
   }
 
   &__adress {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include footer-text;
+    display: flex;
     color: $white-color;
     padding-top: 20px;
     padding-bottom: 9px;
   }
 
   &__contacts {
-    font-weight: 400;
+    @include footer-text;
     display: flex;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: $light-gray;
   }
 
   &__phone {
-    font-weight: 400;
+    @include footer-text;
     display: flex;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: $light-gray;
   }
 }
@@ -92,7 +84,7 @@
 
   &__label {
   color: $white-color;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -112,7 +104,7 @@
   box-shadow: 0px 4px 4px 0px $shadow;
   color: rgba(255, 255, 255, 0.6);
 
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
