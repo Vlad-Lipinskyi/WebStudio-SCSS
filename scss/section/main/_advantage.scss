@@ -1,11 +1,13 @@
-.advantage__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 94px;
+.advantage {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 94px;
+  }
 
-  .advantage__item {
+  &__item {
     width: 270px;
 
     &:nth-child(1):before {
@@ -34,8 +36,10 @@
       background-position: center;
       margin-bottom: 30px;
     }
+  }
 
-    .advantage__title {
+    &__title {
+      display: block;
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
@@ -43,7 +47,7 @@
       color: $second-black;
     }
 
-    .advantage__description {
+    &__description {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
@@ -51,5 +55,4 @@
       color: $gray-color;
       margin-top: 10px;
     }
-  }
 }

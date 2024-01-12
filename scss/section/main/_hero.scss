@@ -11,6 +11,10 @@
   background-position: center;
   background-size: cover;
 
+  @media screen and (max-width: 1200px){
+    background: #2F303A;
+  }
+
   &__title {
     font-weight: 900;
     font-size: 44px;
@@ -24,6 +28,20 @@
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 30px;
+
+@media screen and (max-width: 768px){
+max-width: 360px;
+color: #FFF;
+
+text-align: center;
+font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 900;
+line-height: 42px; 
+letter-spacing: 1.56px;
+text-transform: uppercase;
+    }
   }
 
   &__list {
