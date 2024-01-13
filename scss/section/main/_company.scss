@@ -8,8 +8,12 @@
     color: $second-black;
     margin-top: 118px;
     margin-bottom: 50px;
+    display: none;
 
     animation: TitleInvoledRun 1500ms ease-in 400ms both;
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
   }
 
   &__list {
@@ -56,4 +60,5 @@
   100% {
     transform: translateX(0px);
   }
+}
 }
