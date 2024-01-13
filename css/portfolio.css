@@ -404,6 +404,14 @@ img {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .footer__container {
   display: flex;

@@ -2,6 +2,13 @@
   background: $dark-gray;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+    flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__container {
     display: flex;

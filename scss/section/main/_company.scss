@@ -1,4 +1,9 @@
 .company {
+  display: none;
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+  }
   &__involded {
     font-weight: 700;
     font-size: 36px;
@@ -9,14 +14,15 @@
     margin-top: 118px;
     margin-bottom: 50px;
     display: none;
+    text-align: center;
 
     animation: TitleInvoledRun 1500ms ease-in 400ms both;
 
     @media screen and (min-width: 1200px) {
     display: flex;
   }
-
-  &__list {
+}
+&__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -52,13 +58,15 @@
   }
 }
 
+
+
+
 @keyframes TitleInvoledRun {
   0% {
     transform: translateX(-1500px);
   }
 
   100% {
-    transform: translateX(0px);
-  }
+    transform: translateX(400px);
 }
 }

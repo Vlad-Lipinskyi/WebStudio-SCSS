@@ -285,7 +285,7 @@ img {
   padding-top: 200px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .hero__title {
     max-width: 360px;
     color: #FFF;
@@ -381,6 +381,14 @@ img {
   margin-top: 10px;
 }
 
+.company {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .company {
+    display: flex;
+  }
+}
 .company__involded {
   font-weight: 700;
   font-size: 36px;
@@ -391,6 +399,7 @@ img {
   margin-top: 118px;
   margin-bottom: 50px;
   display: none;
+  text-align: center;
   animation: TitleInvoledRun 1500ms ease-in 400ms both;
 }
 @media screen and (min-width: 1200px) {
@@ -398,16 +407,16 @@ img {
     display: flex;
   }
 }
-.company__involded__list {
+.company__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 94px;
 }
-.company__involded__item {
+.company__item {
   position: relative;
 }
-.company__involded__box {
+.company__box {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -419,7 +428,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.company__involded__text {
+.company__text {
   color: #ffffff;
   text-align: center;
   font-size: 14px;
@@ -429,26 +438,19 @@ img {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
 @keyframes TitleInvoledRun {
   0% {
     transform: translateX(-1500px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(400px);
   }
 }
-
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-@media screen and (max-width: 768px) {
-  .team {
-    background-color: #f5f4fa;
-    width: 100%;
-    height: 100%;
-  }
 }
 .team__title {
   font-weight: 700;
@@ -460,28 +462,10 @@ img {
   margin-bottom: 50px;
   animation: TitleTeamRun 2000ms ease-in 400ms both;
 }
-@media screen and (max-width: 1200px) {
-  .team__title {
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.84px;
-    text-align: center;
-  }
-}
 .team__list {
   display: flex;
   justify-content: center;
   gap: 50px;
-}
-@media screen and (max-width: 768px) {
-  .team__list {
-    flex-wrap: wrap;
-  }
 }
 .team__item {
   width: 270px;
@@ -489,13 +473,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 768px) {
-  .team {
-    width: 450px;
-    height: 622px;
-  }
-}
-.team__name {
+.team__item__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -504,7 +482,7 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
-.team__descr {
+.team__item__descr {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -513,23 +491,23 @@ img {
   color: #757575;
   padding-bottom: 28px;
 }
-.team__icons-list {
+.team__item__icons-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.team__icons-item {
+.team__item__icons-item {
   width: 44px;
   height: 44px;
   flex-shrink: 0;
 }
-.team__text {
+.team__item__text {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: auto;
   padding-right: auto;
 }
-.team__icons-link {
+.team__item__icons-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -539,15 +517,15 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__icons-link:hover, .team__icons-link:focus {
+.team__item__icons-link:hover, .team__item__icons-link:focus {
   background-color: #2196f3;
   border-radius: 50%;
   fill: #ffffff;
 }
-.team__icons-link:hover .team__icons, .team__icons-link:focus .team__icons {
+.team__item__icons-link:hover .team__icons, .team__item__icons-link:focus .team__icons {
   fill: #ffffff;
 }
-.team__icons {
+.team__item__icons {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
@@ -556,7 +534,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @keyframes TitleTeamRun {
   0% {
     transform: translateX(1500px);
@@ -565,7 +542,8 @@ img {
     transform: translateX(0px);
   }
 }
-.customers__title {
+
+.customer__title {
   color: #212121;
   text-align: center;
   font-family: "Roboto";
@@ -578,18 +556,41 @@ img {
   padding-bottom: 50px;
   animation: TitleCustomerRun 1500ms ease-in 400ms both;
 }
-.customers__list {
+@media screen and (max-width: 1200px) {
+  .customer__title {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-align: center;
+  }
+}
+.customer__list {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding-bottom: 94px;
 }
-.customers__item {
+@media screen and (max-width: 768px) {
+  .customer__list {
+    flex-wrap: wrap;
+  }
+}
+.customer__item {
   width: 170px;
   height: 92px;
-  flex-shrink: 0;
 }
-.customers__link {
+@media screen and (max-width: 768px) {
+  .customer__item {
+    width: 210px;
+    height: 92px;
+  }
+}
+.customer__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -603,19 +604,18 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__link:hover, .customers__link:focus {
+.customer__link:hover, .customer__link:focus {
   fill: #2196f3;
   border-radius: 4px;
   border: 1px solid #2196f3;
 }
-.customers__icons {
+.customer__icons {
   width: 106px;
   height: 60px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @keyframes TitleCustomerRun {
   0% {
     transform: translateY(400px);
@@ -626,6 +626,7 @@ img {
     opacity: 1;
   }
 }
+
 .backdrop {
   opacity: 1;
   transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -813,6 +814,14 @@ img {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .footer__container {
   display: flex;
