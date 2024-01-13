@@ -16,6 +16,16 @@
 
   &__webstudio-wh {
     color: $white-color;
+
+    @media screen and (max-width: 1200px) {
+color: #FFF;
+font-family: Raleway;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.72px;
+    }
   }
 
   &__adress {
@@ -24,12 +34,34 @@
     color: $white-color;
     padding-top: 20px;
     padding-bottom: 9px;
+
+    @media screen and (max-width: 1200px) {
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+    }
   }
 
   &__contacts {
     @extend %footer-text !optional;
     display: flex;
     color: $light-gray;
+
+    @media screen and (max-width: 1200px) {
+color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+    }
   }
 
   &__phone {
@@ -39,22 +71,33 @@
   letter-spacing: 0.03em;
     display: flex;
     color: $light-gray;
-  }
-}
 
-.icons {
+    @media screen and (max-width: 1200px) {
+color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+    }
+  }
+
+&__icons {
   margin-left: 70px;
 
-  &__title {
+}
+&__icons-title {
    @extend %footer-font !optional;
 }
-&__list {
+&__icons-list {
     display: flex;
     padding-top: 32px;
     gap: 10px;
   }
 
-  &__link {
+  &__icons-link {
     width: 44px;
     height: 44px;
     background-color: $footer-icons;
@@ -65,28 +108,29 @@
     @extend %transition-bg !optional;
   }
 
-  &__link:hover,
-  &__link:focus {
+  &__icons-link:hover,
+  &__icons-link:focus {
     fill: $white-color;
     border-radius: 50%;
     background-color: $blue-color;
   }
 
-  &__svg {
+  &__icons-svg {
     width: 20px;
     height: 20px;
     fill: $white-color;
   } 
+
+
+&__news {
+  margin-left: 93px;
 }
 
-.news {
-  margin-left: 93px;
-
-  &__label {
+&__news-label {
   @extend %footer-font !optional;
 }
 
-&__input {
+&__news-input {
   width: 342px;
   height: 50px;
   margin-top: 16px;
@@ -106,20 +150,20 @@
   padding-left: 16px;
 }
 
-&__input-button-container {
+&__news-input-button-container {
   display: flex;
   gap: 10px;
 }
 
-&__svg {
+&__news-svg {
   fill: $white-color;
 }
 
-&__svg:hover {
+&__news-svg:hover {
   fill: $blue-color;
 }
 
-&__button {
+&__news-button {
   border-radius: 4px;
   background-color: $blue-color;
   box-shadow: 0px 4px 4px 0px $shadow;
