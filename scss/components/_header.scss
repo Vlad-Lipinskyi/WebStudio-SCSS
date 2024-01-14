@@ -16,17 +16,22 @@
   }
 
   &__logo {
-    @extend %header-font;
-    color: $blue-color;
-
-    @media screen and (max-width: 1200px) {
-      color: #2196f3;
+    color: #2196f3;
       font-family: Raleway;
       font-size: 24px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       letter-spacing: 0.72px;
+    color: $blue-color;
+
+    @media screen and (min-width: 1200px) {
+    font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $blue-color;
     }
   }
 
@@ -65,17 +70,21 @@
   }
 
   &__nav-webstudiobl {
-    @extend %header-font;
-    color: $black-color;
-
-    @media screen and (max-width: 1200px) {
-      color: #212121;
+    color: #212121;
       font-family: Raleway;
       font-size: 24px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       letter-spacing: 0.72px;
+    color: $black-color;
+
+    @media screen and (min-width: 1200px) {
+     font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
     }
   }
 

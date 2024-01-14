@@ -51,13 +51,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__contacts, .footer__adress {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .footer__news-label, .footer__icons-title {
   color: #ffffff;
   font-family: "Roboto";
@@ -407,56 +400,65 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 .footer__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-direction: row;
+  }
 }
 .footer__webstudio-wh {
   color: #ffffff;
-}
-@media screen and (max-width: 1200px) {
-  .footer__webstudio-wh {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.72px;
-  }
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-align: center;
 }
 .footer__adress {
-  display: flex;
-  color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 9px;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__adress {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: flex;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 9px;
   }
 }
 .footer__contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   display: flex;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__contacts {
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -465,23 +467,23 @@ img {
   }
 }
 .footer__phone {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  display: flex;
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__phone {
-    color: rgba(255, 255, 255, 0.6);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 .footer__icons {
@@ -489,7 +491,7 @@ img {
 }
 .footer__icons-list {
   display: flex;
-  padding-top: 32px;
+  margin-top: 32px;
   gap: 10px;
 }
 .footer__icons-link {
