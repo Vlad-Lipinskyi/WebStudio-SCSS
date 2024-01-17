@@ -21,7 +21,7 @@
         }
     }
     &__logo{
-        font-family: $Raleway;
+        font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
@@ -115,7 +115,7 @@
         height: 44px;
     }
     &__icons-item:hover, &__icons-link:focus{
-        background: $main-color;
+        background: $blue-color;
         outline: none;
     }
     &__icons-svg{
@@ -135,7 +135,7 @@
     }
     &__news-title{
         color: #FFF;
-        font-family: $Roboto;
+        font-family: 'Roboto';
         @extend %text-size;
         font-weight: 700;
         letter-spacing: 0.42px;
@@ -171,14 +171,14 @@
     &__news-form-button{
         border: none;
         border-radius: 4px;
-        background: $main-color;
+        background: $blue-color;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         width: 200px;
         height: 50px;
         @extend %flex-base;
         gap: 10px;
         color: #FFF;
-        font-family: $Roboto;
+        font-family: 'Roboto';
         font-size: 16px;
         font-weight: 700;
         line-height: 1.87; 
@@ -192,7 +192,7 @@
         }
     }
     &__news-form-button:hover{
-        background: $button-color;
+        background: #188CE8;
     }
     &__news-button-svg{
         max-width: 24px;

@@ -516,7 +516,7 @@ img {
   height: 44px;
 }
 .footer__icons-item:hover, .footer__icons-link:focus {
-  background: #2196F3;
+  background: #2196f3;
   outline: none;
 }
 .footer__icons-svg {
@@ -578,7 +578,7 @@ img {
 .footer__news-form-button {
   border: none;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;

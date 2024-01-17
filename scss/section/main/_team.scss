@@ -73,18 +73,23 @@
         @include text-prop ($text-color1, 500, 16px, 19px);
         margin-top: 30px;
     }
-    &__job{
-        @include text-prop ($text-color2, 400, 16px, 19px);
-    
+    &__descr{
+        font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    font-size: 16px;
+    line-height: 19px;
+
         margin-top: 10px;
     }
-    &__socials{
+    &__icons{
         @extend %flex-base;
         gap: 10px;
     
         margin-top: 16px;
     }
-    &__social{
+    &__icon{
         border-radius: 100%;
         width: 44px;
         height: 44px;
@@ -113,7 +118,7 @@
         fill: #FFF;
     }
     &__social:hover, &__link:focus{
-        background-color: $main-color;
+        background-color: $blue-color;
         outline: none;
     }
 }
