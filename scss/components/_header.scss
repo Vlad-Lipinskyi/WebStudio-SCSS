@@ -149,12 +149,18 @@
   &__contacts-list {
     display: none;
     flex-wrap: wrap;
-    gap: 50px;
 
     @media screen and (min-width: 768px) {
       display: flex;
+      column-gap: 10px;
     }
-  }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    }
 
   &__nav-tel {
     display: flex;
@@ -178,6 +184,10 @@
     height: 12px;
     fill: $gray-color;
     margin-right: 10px;
+  }
+
+  &__contacts-item:nth-child(1) {
+    margin-bottom: 10px;
   }
 
   &__contacts-item:hover &__nav-icon-smartphone,
@@ -206,7 +216,8 @@
     letter-spacing: 0.02em;
     color: $gray-color;
   }
-}
+  }
+
 
 .logo {
   @extend %header-font;

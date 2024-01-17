@@ -209,11 +209,19 @@ img {
 .header__contacts-list {
   display: none;
   flex-wrap: wrap;
-  gap: 50px;
 }
 @media screen and (min-width: 768px) {
   .header__contacts-list {
     display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 .header__nav-tel {
@@ -234,6 +242,9 @@ img {
   height: 12px;
   fill: #757575;
   margin-right: 10px;
+}
+.header__contacts-item:nth-child(1) {
+  margin-bottom: 10px;
 }
 .header__contacts-item:hover .header__nav-icon-smartphone, .header__contacts-item:focus .header__nav-icon-smartphone {
   fill: #2196f3;
@@ -584,6 +595,14 @@ img {
   gap: 30px;
   padding-bottom: 94px;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .customer__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 94px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .customer__list {
