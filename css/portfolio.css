@@ -50,11 +50,6 @@ img {
   line-height: 24px;
 }
 
-.footer__news-form-button, .footer__icons-item, .footer__icons-link:focus, .header__nav-studio {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
 .footer__news-form-button, .footer__icons-link {
   display: flex;
   justify-content: center;

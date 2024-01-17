@@ -62,15 +62,16 @@
 
     }
     &__title{
-        @include text-prop ($text-color1, 700, 28px, normal);
+        @include text-prop ($gray-color, 700, 28px, normal);
         margin-bottom: 50px;
+        text-align: center;
 
         @media screen and (min-width:1200px) {
             font-size: 36px;
         }
     }
     &__names{
-        @include text-prop ($text-color1, 500, 16px, 19px);
+        @include text-prop ($second-black, 500, 16px, 19px);
         margin-top: 30px;
     }
     &__descr{
@@ -94,7 +95,8 @@
         width: 44px;
         height: 44px;
     
-        @extend %transition;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
         transition-property: background-color;
     }
     &__link{
@@ -103,7 +105,8 @@
         width: 44px;
         height: 44px;
     
-        @extend %transition;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
         transition-property: color;
     }
     &__svg{
@@ -111,7 +114,8 @@
         height: 20px;
         fill: #AFB1B8;
     
-        @extend %transition;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
         transition-property: fill;
     }
     &__social:hover &__svg, &__link:focus &__svg{

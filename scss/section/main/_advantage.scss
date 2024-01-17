@@ -52,6 +52,22 @@
       background-repeat: no-repeat;
       background-position: center;
       margin-bottom: 30px;
+
+      @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 120px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 120px;
+        }
+
+         @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 120px;
+        }
+        
     }
   }
 
@@ -62,6 +78,25 @@
       line-height: 1.14;
       letter-spacing: 0.03em;
       color: $second-black;
+
+      @media screen and (min-width: 480px) {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        @media screen and (min-width: 1200px) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: $second-black;
+      text-align: left;
+        }
     }
 
     &__description {
