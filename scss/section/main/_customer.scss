@@ -10,6 +10,8 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.84px;
 text-align: center;
+padding-top: 94px;
+  padding-bottom: 50px;
 
   animation: TitleCustomerRun 1500ms ease-in 400ms both;
 
@@ -32,6 +34,14 @@ text-align: center;
   justify-content: center;
   gap: 30px;
   padding-bottom: 94px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+  }
 }
 
 &__item {

@@ -4,3 +4,12 @@
   $height: 1.19;
   $spacing: 0.03em;
 }
+
+@mixin text-prop ($color, $fontWeight, $fontSize, $lineHeight){
+    font-weight: $fontWeight;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}

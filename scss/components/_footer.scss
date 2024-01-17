@@ -1,196 +1,202 @@
-.footer {
-  background: $dark-gray;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-    flex-wrap: wrap;
+/*footer */
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
+.footer{
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) { 
-      flex-direction: row;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: center;
+        }
+        @media screen and (min-width: 1200px) {
+            align-items: center;
+        }
     }
-  }
+    &__logo{
+        font-family: $Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
 
-  &__webstudio-wh {
-    color: $white-color;
-font-family: Raleway;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.72px;
-text-align: center
-  }
-
-  &__adress {
-    color: #FFF;
-text-align: center;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
-text-align: center;
-margin-top: 20px;
-margin-bottom: 9px;
-
-    @media screen and (min-width: 1200px) {
-    font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-    display: flex;
-    color: $white-color;
-    padding-top: 20px;
-    padding-bottom: 9px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
     }
-  }
-
-  &__contacts {
-font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-    display: flex;
-    color: $light-gray;
-
-    @media screen and (min-width: 1200px) {
-  color: rgba(255, 255, 255, 0.60);
-text-align: center;
-font-family: "Roboto";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+    &__info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            align-items: start;
+        }
     }
-  }
-
-  &__phone {
-
-    color: rgba(255, 255, 255, 0.60);
-text-align: center;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
-
-    @media screen and (min-width: 1200px) {
-font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-    display: flex;
-    color: $light-gray;
+    &__address{
+        @extend %text-size;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.42px;
+        margin-top: 20px;
     }
-  }
+    &__nav-item{
+        margin-top: 8px;
+    }
+    &__link{
+        font-weight: 400;
+        @extend %text-size;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            flex-direction: row;
+            justify-content: center;
+            gap: 165px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: auto;
+            align-items: center;
+            gap: 0;
+        }
+    }
+    &__icons{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+            margin-left: 70px;
+            align-items: start;
+        }
+    }
+    &__icons-title{
+        color: #FFF;
+        @extend %text-size;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    &__icons-list{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    &__icons-item, &__icons-link:focus{
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.10);
 
-&__icons {
-  margin-left: 70px;
+        @extend %transition;
+        transition-property: background;
+    }
+    &__icons-link{
+        @extend %flex-base;
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+    }
+    &__icons-item:hover, &__icons-link:focus{
+        background: $main-color;
+        outline: none;
+    }
+    &__icons-svg{
+        width: 20px;
+        height: 20px;
+        fill: #FFF;
+    }
+    &__news{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            align-items: start;
+            margin-top: 0;
+        }
+    }
+    &__news-title{
+        color: #FFF;
+        font-family: $Roboto;
+        @extend %text-size;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    &__news-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 12px;
+        }
+    }
+    &__news-email{
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding-left: 15px;
+        height: 50px;
+        width: 290px;
+        color: #FFF;
 
-}
-&__icons-title {
-   @extend %footer-font !optional;
-}
-&__icons-list {
-    display: flex;
-    margin-top: 32px;
-    gap: 10px;
-    
-  }
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 295px;
+        }
+    }
+    &__news-form-button{
+        border: none;
+        border-radius: 4px;
+        background: $main-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        height: 50px;
+        @extend %flex-base;
+        gap: 10px;
+        color: #FFF;
+        font-family: $Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87; 
+        letter-spacing: 0.96px;
+        margin-top: 20px;
 
-  &__icons-link {
-    width: 44px;
-    height: 44px;
-    background-color: $footer-icons;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @extend %transition-bg !optional;
-  }
-
-  &__icons-link:hover,
-  &__icons-link:focus {
-    fill: $white-color;
-    border-radius: 50%;
-    background-color: $blue-color;
-  }
-
-  &__icons-svg {
-    width: 20px;
-    height: 20px;
-    fill: $white-color;
-  } 
-
-
-&__news {
-  margin-left: 93px;
-}
-
-&__news-label {
-  @extend %footer-font !optional;
-}
-
-&__news-input {
-  width: 342px;
-  height: 50px;
-  margin-top: 16px;
-
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px $shadow;
-  color: rgba(255, 255, 255, 0.6);
-
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.48px;
-  padding-left: 16px;
-}
-
-&__news-input-button-container {
-  display: flex;
-  gap: 10px;
-}
-
-&__news-svg {
-  fill: $white-color;
-}
-
-&__news-svg:hover {
-  fill: $blue-color;
-}
-
-&__news-button {
-  border-radius: 4px;
-  background-color: $blue-color;
-  box-shadow: 0px 4px 4px 0px $shadow;
-  color: $white-color;
-  justify-content: center;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.96px;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  border: none;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 17px;
-}
+        @extend %transition;
+        transition-property: background;
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
+    }
+    &__news-form-button:hover{
+        background: $button-color;
+    }
+    &__news-button-svg{
+        max-width: 24px;
+        max-height: 24px;
+        fill: #FFF;
+    }
 }
