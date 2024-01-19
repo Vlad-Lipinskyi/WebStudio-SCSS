@@ -2,10 +2,31 @@
 &__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
+  gap: 8px;
+  padding-top: 100px;
+  padding-bottom: 56px;
+  max-width: 350px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 100px;
+  padding-bottom: 56px;
+  max-width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding-top: 100px;
   padding-bottom: 56px;
+  max-width: 100%;
+  }
 } 
 
 &__first {
@@ -19,6 +40,7 @@
   border-radius: 4px;
   width: 73px;
   height: 38px;
+  background: #F5F4FA;
 }
 
 &__second {
@@ -32,6 +54,7 @@
   border-radius: 4px;
   width: 125px;
   height: 38px;
+  background: #F5F4FA;
 }
 
 &__third {
@@ -45,6 +68,7 @@
   border-radius: 4px;
   width: 112px;
   height: 38px;
+  background: #F5F4FA;
 }
 
 &__fourth {
@@ -58,6 +82,7 @@
   border-radius: 4px;
   width: 103px;
   height: 38px;
+  background: #F5F4FA;
 }
 
 &__fiveth {
@@ -71,6 +96,7 @@
   border-radius: 4px;
   width: 130px;
   height: 38px;
+  background: #F5F4FA;
 }
 
 &__first:active,

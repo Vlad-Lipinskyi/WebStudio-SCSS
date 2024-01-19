@@ -10,11 +10,11 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.84px;
 text-align: center;
-padding-top: 94px;
-  padding-bottom: 50px;
+margin-top: 60px;
+  margin-bottom: 30px;
 
   animation: TitleCustomerRun 1500ms ease-in 400ms both;
-
+// 
   @media screen and (min-width: 1200px) {
  color: $second-black;
   text-align: center;
@@ -24,8 +24,8 @@ padding-top: 94px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 50px;
   }
 }
 

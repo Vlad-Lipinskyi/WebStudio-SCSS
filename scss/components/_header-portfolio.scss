@@ -1,201 +1,226 @@
 .header {
-  outline: solid $white-color 1px;
-  position: relative;
-
-  &__logo{
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $blue-color;
-}
-
-&__page {
-  position: relative;
-}
-
-&__list {
-  display: flex;
-  justify-content: space-between;
-  margin-right: auto;
-  position: relative;
-}
-
-&__section {
   padding-top: 24px;
   padding-bottom: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
 
-&__navigation {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 
-&__page:not(:last-child) {
-  margin-right: 50px;
-}
+  &__navigation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: auto;
+  }
 
-&__nav-icon-smartphone {
-  width: 10px;
-  height: 16px;
-  fill: $gray-color;
-  position: absolute;
-  top: 31px;
-  left: 1206px
-}
+  &__logo {
+    color: #2196f3;
+      font-family: Raleway;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.72px;
+    color: $blue-color;
 
-&__nav-icon-envelope {
-  width: 16px;
-  height: 12px;
-  fill: $gray-color;
-  position: absolute;
-  top: 33px;
-  left: 1372px;
-}
-
-&__nav-studio:hover + &__navigation-box {
-  transform: translatey(0);
-  background-color: $blue-color;
-}
-
-&__nav-contacts:hover + &__navigation-box {
-  transform: translatey(0);
-  background-color: $blue-color;
-}
-
-&__nav-studio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $black-color;
-  @extend %transition;
-}
-
-&__nav-studio:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $blue-color;
-}
-
-&__nav-portfolio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $second-black;
-  position: relative;
-  transition-property: color;
-  transition-duration:  250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__nav-portfolio:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $blue-color;
-}
-
-&__nav-portfolio:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $blue-color;
-}
-
-&__nav-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $second-black;
-  transition-property: color;
-  transition-duration:  250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__nav-contacts:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $blue-color;
-}
-
-&__nav-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $gray-color;
-}
-
-&__nav-tel:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $blue-color;
-}
-
-&__nav-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $gray-color;
-}
-
-&__nav-mail:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $blue-color;
-}
-
-&__nav-webstudio {
-  font-family: "Raleway";
+    @media screen and (min-width: 1200px) {
+    font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $blue-color;
-  margin-right: 93px;
-}
+    }
+  }
 
-&__nav-webstudiobl {
-  color: black;
-}
+  &__menu {
+    display: block;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
 
-&__contacts-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-left: auto;
-}
-}
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__list {
+    display: none;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 93px;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      display: flex; 
+    }
+  }
+
+  &__page {
+    position: relative;
+  }
+
+  &__nav-webstudiobl {
+    color: #212121;
+      font-family: Raleway;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.72px;
+    color: $black-color;
+
+    @media screen and (min-width: 1200px) {
+     font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+    }
+  }
+
+  &__nav-studio {
+    position: relative;
+    @extend %nav-text;
+    color: $second-black;
+    @extend %transition;
+  }
+
+  &__nav-studio:hover,
+  .nav-studio:focus {
+    @extend %nav-text;
+    color: $blue-color;
+  }
+
+  &__nav-portfolio {
+    @extend %nav-text;
+    color: $second-black;
+    @extend %transition;
+  }
+
+  &__nav-portfolio:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $blue-color;
+  }
+
+  &__nav-portfolio:hover + &__navigation-box {
+    transform: translatey(0);
+    background-color: $blue-color;
+  }
+  &__nav-portfolio:hover,
+  .header__nav-portfolio:focus {
+    @extend %nav-text;
+    color: $blue-color;
+  }
+
+  &__nav-contacts {
+    @extend %nav-text;
+    color: $second-black;
+    @extend %transition;
+  }
+
+  &__nav-contacts:hover,
+  .header__nav-contacts:focus {
+    @extend %nav-text;
+    color: $blue-color;
+  }
+
+  &__nav-contacts:hover + .navigation-box {
+    transform: translatey(0);
+    background-color: $blue-color;
+  }
+
+  &__contacts-list {
+    display: none;
+    flex-wrap: wrap;
+    
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      column-gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    }
+
+  &__nav-tel {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-icon-smartphone {
+    width: 10px;
+    height: 16px;
+    fill: $gray-color;
+    margin-right: 10px;
+  }
+
+  &__nav-mail {
+    @extend %nav-text;
+    color: $gray-color;
+  }
+
+  &__nav-icon-envelope {
+    width: 16px;
+    height: 12px;
+    fill: $gray-color;
+    margin-right: 10px;
+  }
+
+  &__contacts-item:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
+  &__contacts-item:hover &__nav-icon-smartphone,
+  &__contacts-item:focus &__nav-icon-smartphone {
+    fill: $blue-color;
+  }
+
+  &__contacts-item:hover &__nav-icon-envelope,
+  &__contacts-item:focus &__nav-icon-envelope {
+    fill: $blue-color;
+  }
+
+  &__contact-text:hover {
+    color: $blue-color;
+  }
+
+  &__contacts-item:hover &__nav-icons-envelope,
+  &__contacts-item:focus &__nav-icons-envelope {
+    fill: $blue-color;
+  }
+
+  &__contact-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $gray-color;
+  }
+  }
+
 
 .logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @extend %header-font;
   color: $blue-color;
 }
