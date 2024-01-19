@@ -605,7 +605,7 @@ img {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: #212121;
   font-size: 28px;
   line-height: normal;
   margin-bottom: 50px;
@@ -973,6 +973,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__container {
     align-items: center;
+    justify-content: end;
   }
 }
 .footer__logo {
@@ -998,6 +999,15 @@ img {
   .footer__info-container {
     align-items: start;
   }
+}
+.footer__webstudio-wh {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 .footer__address {
   color: #FFF;

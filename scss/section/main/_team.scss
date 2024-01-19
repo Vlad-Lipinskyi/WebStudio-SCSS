@@ -62,7 +62,7 @@
 
     }
     &__title{
-        @include text-prop ($gray-color, 700, 28px, normal);
+        @include text-prop (#212121, 700, 28px, normal);
         margin-bottom: 50px;
         text-align: center;
 
