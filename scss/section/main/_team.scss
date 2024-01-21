@@ -1,7 +1,7 @@
 /* workers  */
 .team{
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background-color: #F5F4FA;
     @media screen and (min-width:1200px) {
         padding-top: 94px;
@@ -45,7 +45,7 @@
     }
     &__img{
         width: 290px;
-        height: 374px;
+        height: auto;
 
         @media screen and (min-width:480px) {
             width: 450px;

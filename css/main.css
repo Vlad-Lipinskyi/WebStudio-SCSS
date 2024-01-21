@@ -270,15 +270,13 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  height: 400px;
+  padding: 188px 0px;
   background: #2F303A;
 }
 @media screen and (min-width: 768px) {
   .hero {
     background: #2F303A;
     width: 100%;
-    height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -318,7 +316,6 @@ img {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-: 200px;
   }
 }
 .hero__list {
@@ -381,11 +378,15 @@ img {
 
 .advantage {
   padding-top: 94px;
-  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .advantage {
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantage {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 .advantage__list {
@@ -560,7 +561,7 @@ img {
 /* workers  */
 .team {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background-color: #F5F4FA;
 }
 @media screen and (min-width: 1200px) {
@@ -615,7 +616,7 @@ img {
 }
 .team__img {
   width: 290px;
-  height: 374px;
+  height: auto;
 }
 @media screen and (min-width: 480px) {
   .team__img {
@@ -704,6 +705,16 @@ img {
   outline: none;
 }
 
+.customer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .customer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .customer__title {
   color: #212121;
   text-align: center;
@@ -714,7 +725,6 @@ img {
   line-height: normal;
   letter-spacing: 0.84px;
   text-align: center;
-  margin-top: 60px;
   margin-bottom: 30px;
   animation: TitleCustomerRun 1500ms ease-in 400ms both;
 }
@@ -728,31 +738,31 @@ img {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    margin-top: 94px;
     margin-bottom: 50px;
   }
 }
 .customer__list {
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 94px;
   flex-wrap: wrap;
+  width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .customer__list {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .customer__list {
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 94px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
   .customer__list {
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 94px;
+    width: 1170px;
   }
 }
 .customer__item {
