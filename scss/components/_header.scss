@@ -146,10 +146,9 @@
     background-color: $blue-color;
   }
 
-  &__contacts-list {
+  &__contacts-list{
     display: none;
     flex-wrap: wrap;
-    
 
     @media screen and (min-width: 768px){
       display: flex;
@@ -158,10 +157,14 @@
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: end;
+    gap: 30px;
+    flex-direction: row;
     }
-    }
+  }
+
 
   &__nav-tel {
     display: flex;
@@ -187,8 +190,8 @@
     margin-right: 10px;
   }
 
-  &__contacts-item:nth-child(1) {
-    margin-bottom: 10px;
+  &__contacts-item:nth-child(2){
+    margin-top: 1px;
   }
 
   &__contacts-item:hover &__nav-icon-smartphone,

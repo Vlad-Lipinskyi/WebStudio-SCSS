@@ -212,6 +212,7 @@ img {
 @media screen and (min-width: 768px) {
   .header__contacts-list {
     display: flex;
+    flex-direction: column;
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -220,6 +221,10 @@ img {
   .header__contacts-list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
     flex-direction: row;
   }
 }
@@ -242,8 +247,8 @@ img {
   fill: #757575;
   margin-right: 10px;
 }
-.header__contacts-item:nth-child(1) {
-  margin-bottom: 10px;
+.header__contacts-item:nth-child(2) {
+  margin-top: 1px;
 }
 .header__contacts-item:hover .header__nav-icon-smartphone, .header__contacts-item:focus .header__nav-icon-smartphone {
   fill: #2196f3;

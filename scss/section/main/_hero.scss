@@ -1,8 +1,9 @@
 .hero {
-  padding: 188px 0px;
+  padding: 118px 0px;
   background: #2F303A;
 
   @media screen and (min-width: 768px){
+    padding: 118px 0px;
     background: #2F303A;
     width: 100%;
   }
