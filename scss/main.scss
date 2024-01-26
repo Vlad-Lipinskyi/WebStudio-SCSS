@@ -5,6 +5,7 @@
 @import "./utils/placeholder";
 @import "./utils/mixin";
 
+@import "./components/mobile-menu";
 @import "./components/header";
 
 @import "./section/main/hero";
@@ -13,6 +14,5 @@
 @import "./section/main/team";
 @import "./section/main/customer";
 @import "./section/main/modal";
-@import "./section/main/mobile-menu";
 
 @import "./components/footer";
