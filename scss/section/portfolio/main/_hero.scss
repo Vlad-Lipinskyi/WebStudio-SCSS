@@ -1,15 +1,15 @@
 .hero {
-  padding-top: 200px;
-  height: 400px;
+  padding: 118px 0px;
   background: #2F303A;
 
   @media screen and (min-width: 768px){
+    padding: 118px 0px;
     background: #2F303A;
     width: 100%;
-    height: 400px;
   }
 
   @media screen and (min-width: 1200px){
+    padding: 200px 0px 200px 0;
     background-color: $dark-gray, $hero-bg;
   background-image: url(../../../img/main/hero-bg.webp);
   background-image: linear-gradient(
@@ -50,7 +50,6 @@ font-weight: 900;
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-: 200px;
     }
   }
 

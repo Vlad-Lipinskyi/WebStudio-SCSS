@@ -13,3 +13,42 @@
     font-size: $fontSize;
     line-height: $lineHeight;
 }
+
+
+
+
+
+
+
+
+@mixin text-styles(
+  $size: 14px,
+  $line-height: 1.14,
+  $weight: 700,
+  $space: 0.03em
+) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $space;
+}
+
+
+@mixin sections-retreat(
+  $padding-top: 54px, 
+  $padding-buttom: 54px) 
+  {
+  padding-top: $padding-top;
+  padding-bottom: $padding-buttom;
+}
+
+
+@mixin transition-mixin-one-element(
+  $property,
+  $duration: 250ms,
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
