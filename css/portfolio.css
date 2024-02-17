@@ -415,6 +415,11 @@ img {
   flex-wrap: wrap;
   justify-content: left;
 }
+.poster__page:nth-child(9) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
 .poster__page {
   border: 1px solid #EEE;
   background: #ffffff;

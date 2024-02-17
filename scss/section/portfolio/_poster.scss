@@ -13,6 +13,12 @@
     justify-content: left;
   }
 
+  &__page:nth-child(9) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
   &__page {
     border: 1px solid $poster-border;
     background: $white-color;
